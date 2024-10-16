@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.lehoangtrong</groupId>
+    <artifactId>math-util</artifactId>
+    <version>69.69</version>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <!--    Đây là nơi khai báo tên các thư viện ta cần dùng
+            Các thư viện này nằm sẵn trong kho chứa của Maven,
+            Maven là 1 tool đóng vai trò quản lý thư viện trong 1 app java
+            Đóng vai trò build app từ .java -> .jar, .war (~.dll ở C#)
+            Nó tự đi tìm thư viện, tải về máy, và tự động liên kết với app của mình ~ import
+     -->
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
+        <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>mssql-jdbc</artifactId>
+            <version>12.8.1.jre8</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.11.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <!--    Đây là nơi khai báo các plugin mà mình cần
+            Plugin cần thiết để build, test, deploy app
+            Các plugin này đều do Maven quản lý và cung cấp
+     -->
+    <build>
+        <plugins>
+            <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+            <plugin>
+                <!--                <groupId>org.apache.maven.plugins</groupId>-->
+                <!--                <artifactId>maven-surefire-plugin</artifactId>-->
+                <!--                <version>3.5.0</version>-->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.0</version>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
