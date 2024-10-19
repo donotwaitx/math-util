@@ -1,3 +1,5 @@
+[![Math Utility Project (CI included)](https://github.com/lehoangtrong/math-util/actions/workflows/ci-script.yml/badge.svg)](https://github.com/lehoangtrong/math-util/actions/workflows/ci-script.yml)
+
 # Math Utilities (Maven project with CI Maven)
 
 ## Welcome to Math Utilities project
