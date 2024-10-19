@@ -4,7 +4,7 @@ import static org.lehoangtrong.mathutil.core.MathUtility.*;
 
 public class Main {
     public static void main(String[] args) {
-        testFactorialGivenWrongArgumentNegative5ThrowsException();
+        testFactorialGivenWrongArgumentNegative5ThrowsException();    
     }
 
     // Test case 4:
