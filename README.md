@@ -1,4 +1,4 @@
-# Math Utilities (Maven project)
+# Math Utilities (Maven project with CI Maven)
 
 ## Welcome to Math Utilities project
 
